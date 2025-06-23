@@ -1,0 +1,25 @@
+# Codebase Structure
+
+src/
+    __init__.py
+    main.py                 # Main entry point (bootstraps the application)
+    models/               # Data and business logic
+        __init__.py
+        player_model.py         # Represents a player and their data
+        game_model.py           # Manages overall game state, scoring, etc.
+        database_model.py       # Handles database interactions
+        network_model.py        # Handles network communication
+    views/                # PyQt UI definitions (declarative, minimal logic)
+        __init__.py
+        splash_screen.py
+        player_entry_screen.py
+        play_action_screen.py
+    viewmodels/           # Connects views to models (data formatting, commands)
+        __init__.py
+        splash_screen_viewmodel.py
+        player_entry_viewmodel.py
+        play_action_viewmodel.py
+    utils/               # Utility functions
+        __init__.py
+        config.py           # Reads network settings from a config file
+        audio_player.py     # Handles playing music

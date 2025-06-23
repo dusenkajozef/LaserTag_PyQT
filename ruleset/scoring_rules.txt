@@ -1,0 +1,6 @@
+# Scoring Rules
+
+Opposing team player tag: +10 points
+Same team player tag: -10 points
+Red base score (Green team player): +100 points, "B" added to name
+Green base score (Red team player): +100 points, "B" added to name

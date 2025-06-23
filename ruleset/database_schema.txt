@@ -1,0 +1,19 @@
+# SQLite Database Schema
+
+## Database File: laser_tag.db
+
+## Table: players
+
+| Column Name | Type | Constraints | Description |
+|-------------|------|-------------|-------------|
+| id | INTEGER | PRIMARY KEY AUTOINCREMENT | Auto-incrementing ID |
+| player_id | INTEGER | UNIQUE NOT NULL | Player's unique ID |
+| codename | TEXT | NOT NULL | Player's code name |
+| team | TEXT | NOT NULL | Player's team ('red' or 'green') |
+| hardware_id | INTEGER | UNIQUE | Hardware ID of player's equipment |
+| created_at | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Timestamp of record creation |
+
+## Notes:
+- The database will be stored in a single file: `data/laser_tag.db`
+- No separate database server required
+- All data is stored in the local file system
