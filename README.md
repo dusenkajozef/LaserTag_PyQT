@@ -85,15 +85,3 @@ src/
 Network settings can be configured in the `config.py` file:
 - Host address
 - Port numbers for sending/receiving data
-
-## Testing
-
-To run the test suite:
-
-```bash
-python -m unittest discover -s tests
-```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
